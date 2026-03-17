@@ -183,7 +183,8 @@
 
 /* Checkout Page */
 .hl-store-checkout-container .checkout-form h1,
-.hl-store-checkout-container .checkout-heading {
+.hl-store-checkout-container .checkout-heading,
+.hl-cart-summary-container .hl-cart-heading {
     font: var(--page-title-text-font-size) var(--page-title-text-font-family) !important;
     color: var(--page-title-text-color) !important;
 }
@@ -226,9 +227,13 @@
 }
 
 .hl-store-checkout-container .hl-cart-checkout-product-name,
+.hl-store-checkout-container .hl-cart-checkout-product-price,
 .hl-store-checkout-container .price,
 .hl-store-checkout-container .total-amount,
-.hl-store-checkout-container .text-black {
+.hl-store-checkout-container .text-black,
+.hl-store-checkout-container .text-black-mr-3,
+.hl-store-checkout-container .cart-subtotal p,
+.hl-store-checkout-container .cart-total p {
     color: var(--product-name-text-color) !important;
 }
 
