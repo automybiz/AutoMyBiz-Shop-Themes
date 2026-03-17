@@ -54,7 +54,18 @@
     /* 
     HOW TO CHANGE SVG ICON COLORS:
     Because these are <img> tags, you must use a CSS filter to change their color.
-    Use this tool to generate a filter from a HEX color: https://codepen.io/sosuke/pen/P9goY7
+    To generate a new filter, ask an AI (Google AI, ChatGPT, Cline) for:
+    "Generate a CSS filter to change a black SVG to [YOUR HEX COLOR]"
+
+    QUICK REFERENCE FILTERS:
+    Teal (#0FF): invert(100%) sepia(100%) saturate(10000%) hue-rotate(130deg) brightness(100%) contrast(100%)
+    Teal (#0CC): invert(62%) sepia(91%) saturate(3546%) hue-rotate(145deg) brightness(97%) contrast(101%)
+    Teal (#099): invert(41%) sepia(96%) saturate(1212%) hue-rotate(143deg) brightness(96%) contrast(101%)
+    Teal (#066): invert(27%) sepia(87%) saturate(1261%) hue-rotate(143deg) brightness(91%) contrast(101%)
+    Teal (#033): invert(12%) sepia(92%) saturate(1471%) hue-rotate(142deg) brightness(93%) contrast(101%)
+    White (#FFF): invert(100%)
+    Gray (#888): invert(58%) sepia(0%) saturate(0%) hue-rotate(175deg) brightness(93%) contrast(90%)
+    Orange (#F90): invert(70%) sepia(90%) saturate(2000%) hue-rotate(10deg) brightness(105%) contrast(105%)
     */
     --product-input-svg-filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(130deg) brightness(100%) contrast(100%);
 }
