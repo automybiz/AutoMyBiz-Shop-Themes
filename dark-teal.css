@@ -320,20 +320,23 @@
 }
 
 /* Account / Login Page Styling */
-body:has(.hl-account-login-container),
-body:has(.account-page),
-.hl-account-login-container {
+body:has(#login-form),
+body:has(.n-form#login-form),
+#app:has(#login-form),
+#login-form {
     background-color: #011 !important;
 }
 
-.hl-account-login-container .card {
-    background-color: var(--product-input-background-color) !important;
-    border: 1px solid var(--button-border-color) !important;
-    border-radius: var(--button-border-radius) !important;
+#login-form .n-config-provider {
+    background-color: #011 !important;
 }
 
-.hl-account-login-container h2,
-.hl-account-login-container label {
+#login-form .n-input,
+#login-form .n-button {
+    font-family: var(--product-input-text-font-family) !important;
+}
+
+#login-form h1,
+#login-form div[class*="text-gray"] {
     color: var(--page-title-text-color) !important;
-    font-family: var(--page-title-text-font-family) !important;
 }
