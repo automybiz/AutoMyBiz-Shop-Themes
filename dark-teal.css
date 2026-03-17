@@ -323,20 +323,77 @@
 body:has(#login-form),
 body:has(.n-form#login-form),
 #app:has(#login-form),
-#login-form {
-    background-color: #011 !important;
-}
-
+#login-form,
 #login-form .n-config-provider {
     background-color: #011 !important;
 }
 
-#login-form .n-input,
-#login-form .n-button {
-    font-family: var(--product-input-text-font-family) !important;
+/* Header and Welcome Text */
+#login-form h1,
+#login-form .hl-text-md-normal,
+#login-form .text-gray-500 {
+    font: var(--page-title-text-font-size) var(--page-title-text-font-family) !important;
+    color: var(--page-title-text-color) !important;
 }
 
-#login-form h1,
-#login-form div[class*="text-gray"] {
-    color: var(--page-title-text-color) !important;
+/* Email Input Field Styling */
+#login-form .n-input {
+    --n-bezier: cubic-bezier(.4, 0, .2, 1);
+    --n-color: var(--product-input-background-color) !important;
+    --n-color-focus: var(--product-input-background-color) !important;
+    --n-font-family: var(--product-input-text-font-family) !important;
+    --n-font-size: var(--product-input-text-font-size) !important;
+    --n-text-color: var(--product-input-text-color) !important;
+    --n-placeholder-color: var(--product-input-text-color) !important;
+    --n-border: 1px solid var(--product-input-border-color) !important;
+    --n-border-hover: 1px solid var(--button-background-color) !important;
+    --n-border-focus: 1px solid var(--button-background-color) !important;
+    --n-box-shadow-focus: 0 0 0 2px var(--button-background-color) !important;
+    --n-border-radius: var(--product-input-border-radius) !important;
+}
+
+#login-form .n-input:not(.n-input--disabled).n-input--focus {
+    background-color: var(--product-input-background-color) !important;
+}
+
+#login-form .n-input .n-input__border, 
+#login-form .n-input .n-input__state-border {
+    border: 1px solid var(--product-input-border-color) !important;
+    border-radius: var(--product-input-border-radius) !important;
+}
+
+/* Fix text color inside the input element itself */
+#login-form .n-input input {
+    color: var(--product-input-text-color) !important;
+}
+
+/* Validation Message Styling */
+#login-form .n-form-item-feedback-wrapper {
+    color: #F90 !important; /* Using your orange variable color for visibility */
+    font-family: var(--product-input-label-text-font-family) !important;
+}
+
+/* Login Button Styling */
+#login-form .n-button {
+    --n-bezier: cubic-bezier(.4, 0, .2, 1);
+    --n-color: var(--button-background-color) !important;
+    --n-color-hover: var(--button-background-color) !important;
+    --n-color-pressed: var(--button-background-color) !important;
+    --n-color-focus: var(--button-background-color) !important;
+    --n-border: 1px solid var(--button-border-color) !important;
+    --n-border-hover: 1px solid var(--button-text-color) !important;
+    --n-border-pressed: 1px solid var(--button-text-color) !important;
+    --n-border-focus: 1px solid var(--button-text-color) !important;
+    --n-text-color: var(--button-text-color) !important;
+    --n-text-color-hover: var(--button-text-color) !important;
+    --n-text-color-pressed: var(--button-text-color) !important;
+    --n-text-color-focus: var(--button-text-color) !important;
+    --n-border-radius: var(--button-border-radius) !important;
+    --n-font-family: var(--product-input-text-font-family) !important;
+    --n-font-weight: bold !important;
+    filter: none !important;
+}
+
+#login-form .n-button:hover {
+    filter: brightness(1.2) !important;
 }
