@@ -226,6 +226,15 @@
     color: var(--page-title-text-color) !important;
 }
 
+.hl-store-checkout-container .edit-cart {
+    color: var(--product-name-text-color) !important;
+    text-decoration: none !important;
+}
+
+.hl-store-checkout-container .edit-cart img {
+    filter: var(--product-input-svg-filter) !important;
+}
+
 .hl-store-checkout-container .hl-cart-checkout-product-name,
 .hl-store-checkout-container .hl-cart-checkout-product-price,
 .hl-store-checkout-container .price,
