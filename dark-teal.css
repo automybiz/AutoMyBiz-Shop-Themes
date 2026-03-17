@@ -47,14 +47,18 @@
     
     --product-image-border-radius: 11px;
     
+    --checkbox-accent-color: #0FF;
+
     --product-input-text-color: #0FF;
     --product-input-text-font-size: 44px;
     --product-input-text-font-family: "Times New Roman", serif;
 
     /* 
     HOW TO CHANGE SVG ICON COLORS:
+
     Because these are <img> tags, you must use a CSS filter to change their color.
     To generate a new filter, ask an AI (Google AI, ChatGPT, Cline) for:
+
     "Generate a CSS filter to change a black SVG to [YOUR HEX COLOR]"
 
     QUICK REFERENCE FILTERS:
@@ -166,4 +170,57 @@
 
 .c-store-cart  .image-zoom-wrapper * {
     border-radius: var(--product-image-border-radius) !important;
+}
+
+
+/* Checkout Page */
+.hl-store-checkout-container .checkout-form h1,
+.hl-store-checkout-container .checkout-heading {
+    font: var(--page-title-text-font-size) var(--page-title-text-font-family) !important;
+    color: var(--page-title-text-color) !important;
+}
+
+.hl-store-checkout-container .input-label span {
+    font: var(--product-name-text-font-size) var(--product-name-text-font-family) !important;
+    color: var(--product-name-text-color) !important;
+}
+
+.hl-store-checkout-container label.flex.gap-2 {
+    font: var(--product-name-text-font-size) var(--product-name-text-font-family) !important;
+    color: var(--product-name-text-color) !important;
+}
+
+/* Custom Checkbox Styling */
+.hl-store-checkout-container input[type="checkbox"] {
+    accent-color: var(--checkbox-accent-color) !important;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Summary Panel Styles */
+.hl-store-checkout-container .cart-summary-desktop {
+    color: var(--product-name-text-color) !important;
+}
+
+.hl-store-checkout-container .hl-cart-heading-container {
+    color: var(--page-title-text-color) !important;
+}
+
+
+/* Checkout Page */
+.hl-store-checkout-container  .checkout-heading {
+    font: var(--page-title-text-font-size) var(--page-title-text-font-family) !important;
+    color: var(--page-title-text-color) !important;
+}
+
+.hl-store-checkout-container  .input-label {
+    font: var(--product-name-text-font-size) var(--product-name-text-font-family) !important;
+    color: var(--product-name-text-color) !important;
+}
+
+.hl-store-checkout-container .hl-quantity-input-container .hl-quantity-input {
+    font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
+    color: var(--product-input-text-color) !important;
+    background: transparent !important;
 }
