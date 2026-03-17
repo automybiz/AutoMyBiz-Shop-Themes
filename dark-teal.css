@@ -22,8 +22,16 @@
     --page-title-text-font-family: "Times New Roman", serif;
     
     --product-name-text-color: #FFF;
-    --product-name-text-font-size: 33px;
+    --product-name-text-font-size: 22px;
     --product-name-text-font-family: "Times New Roman", serif;
+    
+    --product-quan-amount-text-color: #FFF; /* Amount Styles are used on Cart Page */
+    --product-quan-amount-text-font-size: 33px;
+    --product-quan-amount-text-font-family: "Times New Roman", serif;
+    
+    --product-price-amount-text-color: #FFF; /* Amount Styles are used on Cart Page */
+    --product-price-amount-text-font-size: 33px;
+    --product-price-amount-text-font-family: "Times New Roman", serif;
     
     --product-price-text-color: #FFF;
     --product-price-text-font-size: 33px;
@@ -38,6 +46,13 @@
     --product-price-discount-text-font-family: "Times New Roman", serif;
     
     --product-image-border-radius: 11px;
+    
+    --product-input-text-color: #0FF;
+    --product-input-text-font-size: 44px;
+    --product-input-text-font-family: "Times New Roman", serif;
+
+    /* Filter for #0FF (Cyan/Teal) */
+    --product-input-svg-filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(130deg) brightness(100%) contrast(100%);
 }
 
 
@@ -99,14 +114,29 @@
     color: var(--page-title-text-color) !important;
 }
 
+.c-store-cart .hl-quantity-input-container .hl-quantity-input {
+    font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
+    color: var(--product-input-text-color) !important;
+    background: transparent !important;
+}
+
+.c-store-cart .hl-quantity-input-container .action-icon {
+    filter: var(--product-input-svg-filter) !important;
+}
+
 .c-store-cart  .hl-cart-product-name {
     font: var(--product-name-text-font-size) var(--product-name-text-font-family) !important;
     color: var(--product-name-text-color) !important;
 }
 
 .c-store-cart  .item-amount-wrapper * {
-    font: var(--product-price-text-font-size) var(--product-price-text-font-family) !important;
-    color: var(--product-price-text-color) !important;
+    font: var(--product-price-amount-text-font-size) var(--product-price-amount-text-font-family) !important;
+    color: var(--product-price-amount-text-color) !important;
+}
+
+.c-store-cart  .hl-quantity-input {
+    font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
+    color: var(--product-input-text-color) !important;
 }
 
 .c-store-cart  .cart-subtotal * {
