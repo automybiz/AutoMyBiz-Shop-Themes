@@ -44,8 +44,24 @@
     --product-price-discount-text-color: #3F3;
     --product-price-discount-text-font-size: 18px;
     --product-price-discount-text-font-family: "Times New Roman", serif;
-    
+
+    --product-price-subtotal-text-color: #3F3;
+    --product-price-subtotal-text-font-size: 18px;
+    --product-price-subtotal-text-font-family: "Times New Roman", serif;
+
+    --product-price-total-text-color: #3F3;
+    --product-price-total-text-font-size: 18px;
+    --product-price-total-text-font-family: "Times New Roman", serif;
+
     --product-image-border-radius: 11px;
+
+    --product-price-subtotal-text-color: #3F3;
+    --product-price-subtotal-text-font-size: 18px;
+    --product-price-subtotal-text-font-family: "Times New Roman", serif;
+
+    --product-price-total-text-color: #3F3;
+    --product-price-total-text-font-size: 18px;
+    --product-price-total-text-font-family: "Times New Roman", serif;
     
     --checkbox-accent-color: #0FF;
 
@@ -175,13 +191,13 @@
 }
 
 .c-store-cart  .cart-subtotal * {
-    font: var(--product-price-override-text-font-size) var(--product-price-override-text-font-family) !important;
-    color: var(--product-price-override-text-color) !important;
+    font: var(--product-price-subtotal-text-font-size) var(--product-price-subtotal-text-font-family) !important;
+    color: var(--product-price-subtotal-text-color) !important;
 }
 
 .c-store-cart  .cart-total * {
-    font: var(--product-price-discount-text-font-size) var(--product-price-discount-text-font-family) !important;
-    color: var(--product-price-discount-text-color) !important;
+    font: var(--product-price-total-text-font-size) var(--product-price-total-text-font-family) !important;
+    color: var(--product-price-total-text-color) !important;
 }
 
 .c-store-cart  .hl-cart-product-image * {
@@ -274,13 +290,21 @@
 
 .hl-store-checkout-container .hl-cart-checkout-product-name,
 .hl-store-checkout-container .hl-cart-checkout-product-price,
-.hl-store-checkout-container .price,
-.hl-store-checkout-container .total-amount,
 .hl-store-checkout-container .text-black,
-.hl-store-checkout-container .text-black-mr-3,
-.hl-store-checkout-container .cart-subtotal p,
-.hl-store-checkout-container .cart-total p {
+.hl-store-checkout-container .text-black-mr-3 {
     color: var(--product-name-text-color) !important;
+}
+
+.hl-store-checkout-container .cart-subtotal p,
+.hl-store-checkout-container .price {
+    font: var(--product-price-subtotal-text-font-size) var(--product-price-subtotal-text-font-family) !important;
+    color: var(--product-price-subtotal-text-color) !important;
+}
+
+.hl-store-checkout-container .cart-total p,
+.hl-store-checkout-container .total-amount {
+    font: var(--product-price-total-text-font-size) var(--product-price-total-text-font-family) !important;
+    color: var(--product-price-total-text-color) !important;
 }
 
 /* Button Styling */
