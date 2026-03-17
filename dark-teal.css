@@ -49,6 +49,11 @@
     
     --checkbox-accent-color: #0FF;
 
+    --button-text-color: #FFF;
+    --button-background-color: #099;
+    --button-border-color: #0FF;
+    --button-border-radius: 8px;
+
     --product-input-text-color: #FFF;
     --product-input-text-font-size: 22px;
     --product-input-text-font-family: "Times New Roman", serif;
@@ -139,7 +144,7 @@
 .c-store-cart .hl-quantity-input-container .hl-quantity-input {
     font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
     color: var(--product-input-text-color) !important;
-    background: transparent !important;
+    background: var(--product-input-background-color) !important;
 }
 
 .c-store-cart .hl-quantity-input-container .action-icon {
@@ -193,7 +198,7 @@
 .hl-store-checkout-container .form-input {
     font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
     color: var(--product-input-text-color) !important;
-    background: transparent !important;
+    background: var(--product-input-background-color) !important;
     border-color: var(--product-input-border-color) !important;
     border-radius: var(--product-input-border-radius) !important;
 }
@@ -209,7 +214,39 @@
 }
 
 /* Summary Panel Styles */
+.hl-store-checkout-container .hl-cart-summary-container {
+    background-color: var(--product-input-background-color) !important;
+    border: 1px solid var(--button-border-color) !important;
+    border-radius: var(--button-border-radius) !important;
+}
+
 .hl-store-checkout-container .cart-summary-desktop,
 .hl-store-checkout-container .hl-cart-heading-container {
     color: var(--page-title-text-color) !important;
+}
+
+.hl-store-checkout-container .hl-cart-checkout-product-name,
+.hl-store-checkout-container .price,
+.hl-store-checkout-container .total-amount,
+.hl-store-checkout-container .text-black {
+    color: var(--product-name-text-color) !important;
+}
+
+/* Button Styling */
+.hl-store-checkout-container .apply-btn,
+.hl-store-checkout-container .checkout-button,
+.hl-store-checkout-container button[type="submit"] {
+    background-color: var(--button-background-color) !important;
+    border: 1px solid var(--button-border-color) !important;
+    color: var(--button-text-color) !important;
+    border-radius: var(--button-border-radius) !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: filter 0.2s ease !important;
+}
+
+.hl-store-checkout-container .apply-btn:hover,
+.hl-store-checkout-container .checkout-button:hover,
+.hl-store-checkout-container button[type="submit"]:hover {
+    filter: brightness(1.2) !important;
 }
