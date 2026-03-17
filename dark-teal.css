@@ -49,9 +49,12 @@
     
     --checkbox-accent-color: #0FF;
 
-    --product-input-text-color: #0FF;
-    --product-input-text-font-size: 44px;
+    --product-input-text-color: #FFF;
+    --product-input-text-font-size: 22px;
     --product-input-text-font-family: "Times New Roman", serif;
+    --product-input-background-color: #011;
+    --product-input-border-color: #0FF;
+    --product-input-border-radius: 8px;
 
     /* 
     HOW TO CHANGE SVG ICON COLORS:
@@ -173,7 +176,7 @@
 }
 
 
-/* Checkout Page */
+/* Checkout Page Gemini Made */
 .hl-store-checkout-container .checkout-form h1,
 .hl-store-checkout-container .checkout-heading {
     font: var(--page-title-text-font-size) var(--page-title-text-font-family) !important;
@@ -188,10 +191,12 @@
 .hl-store-checkout-container label.flex.gap-2 {
     font: var(--product-name-text-font-size) var(--product-name-text-font-family) !important;
     color: var(--product-name-text-color) !important;
+    cursor: pointer;
 }
 
 /* Custom Checkbox Styling */
-.hl-store-checkout-container input[type="checkbox"] {
+.hl-store-checkout-container input[type="checkbox"],
+.hl-store-checkout-container .hl-checkbox-wrapper input[type="checkbox"] {
     accent-color: var(--checkbox-accent-color) !important;
     width: 18px;
     height: 18px;
@@ -208,7 +213,7 @@
 }
 
 
-/* Checkout Page */
+/* Checkout Page Brian Made*/
 .hl-store-checkout-container  .checkout-heading {
     font: var(--page-title-text-font-size) var(--page-title-text-font-family) !important;
     color: var(--page-title-text-color) !important;
@@ -219,8 +224,10 @@
     color: var(--product-name-text-color) !important;
 }
 
-.hl-store-checkout-container .hl-quantity-input-container .hl-quantity-input {
+.hl-store-checkout-container .form-input {
     font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
     color: var(--product-input-text-color) !important;
     background: transparent !important;
+    border-color: var(--product-input-border-color) !important;
+    border-radius: var(--product-input-border-radius) !important;
 }
