@@ -254,6 +254,7 @@
 
 .hl-store-checkout-container .hl-cart-product-image {
     border-radius: 5px !important;
+    object-fit: fill !important;
 }
 
 .hl-store-checkout-container .cart-summary-desktop,
