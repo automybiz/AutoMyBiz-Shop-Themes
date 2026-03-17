@@ -47,12 +47,12 @@
     
     --product-image-border-radius: 11px;
     
-    --product-input-text-color: #0FF;
+    --product-input-text-color: #F90;
     --product-input-text-font-size: 44px;
     --product-input-text-font-family: "Times New Roman", serif;
 
-    /* Filter for #0FF (Cyan/Teal) */
-    --product-input-svg-filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(130deg) brightness(100%) contrast(100%);
+    /* Filter for #F90 (Bright Orange) */
+    --product-input-svg-filter: invert(70%) sepia(90%) saturate(2000%) hue-rotate(10deg) brightness(105%) contrast(105%);
 }
 
 
