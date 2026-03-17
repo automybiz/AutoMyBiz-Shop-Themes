@@ -26,23 +26,23 @@
     --product-name-text-font-family: "Times New Roman", serif;
     
     --product-quan-amount-text-color: #FFF; /* Amount Styles are used on Cart Page */
-    --product-quan-amount-text-font-size: 33px;
+    --product-quan-amount-text-font-size: 22px;
     --product-quan-amount-text-font-family: "Times New Roman", serif;
     
     --product-price-amount-text-color: #FFF; /* Amount Styles are used on Cart Page */
-    --product-price-amount-text-font-size: 33px;
+    --product-price-amount-text-font-size: 22px;
     --product-price-amount-text-font-family: "Times New Roman", serif;
     
     --product-price-text-color: #FFF;
-    --product-price-text-font-size: 33px;
+    --product-price-text-font-size: 22px;
     --product-price-text-font-family: "Times New Roman", serif;
     
     --product-price-override-text-color: #FFF;
-    --product-price-override-text-font-size: 33px;
+    --product-price-override-text-font-size: 22px;
     --product-price-override-text-font-family: "Times New Roman", serif;
     
     --product-price-discount-text-color: #3F3;
-    --product-price-discount-text-font-size: 33px;
+    --product-price-discount-text-font-size: 22px;
     --product-price-discount-text-font-family: "Times New Roman", serif;
     
     --product-image-border-radius: 11px;
@@ -54,12 +54,20 @@
     --button-border-color: #0FF;
     --button-border-radius: 8px;
 
+    --product-input-label-text-color: #FFF;
+    --product-input-label-text-font-size: 16px;
+    --product-input-label-text-font-family: "Times New Roman", serif;
+
     --product-input-text-color: #FFF;
-    --product-input-text-font-size: 22px;
+    --product-input-text-font-size: 16px;
     --product-input-text-font-family: "Times New Roman", serif;
     --product-input-background-color: #011;
     --product-input-border-color: #0FF;
     --product-input-border-radius: 8px;
+
+    --card-container-background-color: #033;
+    --card-container-border-color: #0FF;
+    --card-container-border-radius: 22px;
 
     /* 
     HOW TO CHANGE SVG ICON COLORS:
@@ -192,8 +200,8 @@
 .hl-store-checkout-container .input-label span,
 .hl-store-checkout-container .input-label,
 .hl-store-checkout-container label.flex.gap-2 {
-    font: var(--product-name-text-font-size) var(--product-name-text-font-family) !important;
-    color: var(--product-name-text-color) !important;
+    font: var(--product-input-label-text-font-size) var(--product-input-label-text-font-family) !important;
+    color: var(--product-input-label-text-color) !important;
 }
 
 .hl-store-checkout-container .form-input,
@@ -239,9 +247,9 @@
 
 /* Summary Panel Styles */
 .hl-store-checkout-container .hl-cart-summary-container {
-    background-color: var(--product-input-background-color) !important;
-    border: 1px solid var(--button-border-color) !important;
-    border-radius: var(--button-border-radius) !important;
+    background-color: var(--card-container-background-color) !important;
+    border: 1px solid var(--card-container-border-color) !important;
+    border-radius: var(--card-container-border-radius) !important;
 }
 
 .hl-store-checkout-container .cart-summary-desktop,
