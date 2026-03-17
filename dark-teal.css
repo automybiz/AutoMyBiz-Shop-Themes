@@ -1,0 +1,59 @@
+:root {
+    
+    /* Note: The text font variables are used in a shorthand font setting.
+    
+    The only 2 mandatory values in a shorthand font setting are font-size and font-family.
+    
+    Also, the font-family value must be the last one used in the shorthand font declaration,
+    and while font-family must always be the last value, the optional properties must come before font-size.
+    
+    Examples:
+    
+        Only mandatory values...
+        font: 16px Arial, sans-serif;
+    
+        Optional values included, placed before font-size...
+        font: italic bold 16px "Times New Roman", serif;
+    
+    */
+    
+    --product-name-text-color: #FFF;
+    --product-name-text-font: 22px "Times New Roman", serif;
+    
+    --product-price-text-color: #FFF;
+    --product-price-text-font: 22px "Times New Roman", serif;
+    
+    --product-price-override-text-color: #FFF;
+    --product-price-override-text-font: 22px "Times New Roman", serif;
+    
+    --product-price-discount-text-color: #3F3;
+    --product-price-discount-text-font: 22px "Times New Roman", serif;
+    
+    --product-image-border-radius: 11px;
+}
+
+
+/* Product List Page */
+.hl-product-list-item-details  .hl-product-list-product-name {
+    font: var(--product-name-text-font) !important;
+    color: var(--product-name-text-color) !important;
+}
+
+.hl-product-list-item-details  .hl-product-list-product-price {
+    font: var(--product-price-text-font) !important;
+    color: var(--product-price-text-color) !important;
+}
+
+.hl-product-list-item-details  .hl-product-list-price-override {
+    font: var(--product-price-override-text-font) !important;
+    color: var(--product-price-override-text-color) !important;
+}
+
+.hl-product-list-item-details  .hl-product-list-price-discount {
+    font: var(--product-price-discount-text-font) !important;
+    color: var(--product-price-discount-text-color) !important;
+}
+
+.hl-product-list-item-details  .image-wrapper {
+    border-radius: var(--product-image-border-radius) !important;
+}
