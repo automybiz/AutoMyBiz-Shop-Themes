@@ -186,6 +186,7 @@
 
 .c-store-cart  .image-zoom-wrapper * {
     border-radius: var(--product-image-border-radius) !important;
+    object-fit: fill !important;
 }
 
 
