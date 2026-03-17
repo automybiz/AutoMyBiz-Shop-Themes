@@ -318,3 +318,22 @@
 .hl-store-checkout-container button[type="submit"]:hover {
     filter: brightness(1.2) !important;
 }
+
+/* Account / Login Page Styling */
+body:has(.hl-account-login-container),
+body:has(.account-page),
+.hl-account-login-container {
+    background-color: #011 !important;
+}
+
+.hl-account-login-container .card {
+    background-color: var(--product-input-background-color) !important;
+    border: 1px solid var(--button-border-color) !important;
+    border-radius: var(--button-border-radius) !important;
+}
+
+.hl-account-login-container h2,
+.hl-account-login-container label {
+    color: var(--page-title-text-color) !important;
+    font-family: var(--page-title-text-font-family) !important;
+}
