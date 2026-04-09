@@ -400,15 +400,19 @@
    Dark‑theme overrides for the “Thank You” page
    ------------------------------------------------- */
 
-/* Target any element whose class contains the substring
-   "cstore-thank-you". This works even if the random suffix
-   changes. */
+/* -----------------------------------------------------------------
+   General container – matches any element whose class contains
+   the substring “cstore‑thank‑you”. This works even if the random
+   suffix changes.
+   ----------------------------------------------------------------- */
 [class*="cstore-thank-you"] {
   background-color: var(--color-bg-dark, #022) !important;
   color: var(--color-text-light, #f0f0f0) !important;
 }
 
-/* Headline container & text */
+/* -----------------------------------------------------------------
+   Header & sub‑headline
+   ----------------------------------------------------------------- */
 [class*="cstore-thank-you"] .hl-thankyou-headline-container {
   border-bottom: 1px solid var(--color-primary-dark, #0066cc);
 }
@@ -417,13 +421,32 @@
   color: var(--color-text-light, #e0e0e0);
 }
 
-/* Order summary – headings */
+/* -----------------------------------------------------------------
+   Shipping details heading – treat it as a subtitle
+   ----------------------------------------------------------------- */
+[class*="cstore-thank-you"] .shipping-details-heading {
+  font-size: 1.125rem;          /* slightly larger than body text */
+  font-weight: 600;             /* semi‑bold */
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-light, #a0c0ff);
+}
+
+/* Shipping / billing details text */
+[class*="cstore-thank-you"] .shipping-details {
+  color: var(--color-text-light, #e0e0e0);
+}
+
+/* -----------------------------------------------------------------
+   Order summary headings
+   ----------------------------------------------------------------- */
 [class*="cstore-thank-you"] .hl-order-summary-container .header-desktop span,
 [class*="cstore-thank-you"] .hl-order-summary-container .header-mobile span {
   color: var(--color-primary-light, #a0c0ff);
 }
 
-/* Order items */
+/* -----------------------------------------------------------------
+   Order items
+   ----------------------------------------------------------------- */
 [class*="cstore-thank-you"] .hl-order-item {
   background-color: var(--color-bg-darker, #011);
   border-bottom: 1px solid var(--color-primary-dark, #0066cc);
@@ -450,25 +473,36 @@
   color: var(--color-text-light, #e0e0e0);
 }
 
-/* Shipping / billing details */
-[class*="cstore-thank-you"] .shipping-details-heading {
-  color: var(--color-primary-light, #a0c0ff);
-}
-[class*="cstore-thank-you"] .shipping-details {
-  color: var(--color-text-light, #e0e0e0);
-}
-
-/* Action button */
+/* -----------------------------------------------------------------
+   Action button – style it as a proper button
+   ----------------------------------------------------------------- */
 [class*="cstore-thank-you"] .thankyou-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--color-primary-dark, #0066cc);
   color: var(--color-text-light, #ffffff);
   border: none;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 [class*="cstore-thank-you"] .thankyou-action-btn:hover {
   background-color: var(--color-primary, #0099ff);
 }
 
-/* Icons (check, arrow, etc.) – darken them slightly */
+/* Arrow icon inside the button – darken slightly */
+[class*="cstore-thank-you"] .thankyou-action-btn .right-arrow {
+  margin-left: 0.5rem;
+  filter: brightness(0.8);
+}
+
+/* -----------------------------------------------------------------
+   Icons (check, arrow, etc.) – darken them slightly
+   ----------------------------------------------------------------- */
 [class*="cstore-thank-you"] .check-icon,
 [class*="cstore-thank-you"] .right-arrow {
   filter: brightness(0.8);
@@ -483,6 +517,9 @@
 [class*="cstore-thank-you"] [style*="color:#"] {
   color: var(--color-text-light, #e0e0e0) !important;
 }
+
+
+
 
 /* -------------------------------------------------------
    Dark‑theme overrides for the Global Shop Button Styling
