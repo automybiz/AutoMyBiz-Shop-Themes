@@ -77,6 +77,9 @@
     --card-container-border-color: #0FF;
     --card-container-border-radius: 22px;
 
+    --drawer-contianer-background-color: #033;
+    --drawer-contianer-border-color: #0FF;
+
     /* 
     HOW TO CHANGE SVG ICON COLORS:
 
@@ -148,6 +151,88 @@
 
 .product-detail-container  .image-zoom-wrapper {
     border-radius: var(--product-image-border-radius) !important;
+}
+
+/* -------------------------------------------------
+   Dark‑theme overrides for the drawer component
+   ------------------------------------------------- */
+
+/* Base drawer styling – use the existing root variables */
+.drawer__content {
+  /* Existing inline styles are kept, but we reinforce a darker palette */
+  max-width: 370px;
+  background-color: var(--color-bg-dark, #022) !important;
+  border: 1px solid var(--color-primary-dark, #0066cc) !important;
+  color: var(--color-text-light, #f0f0f0);
+}
+
+/* Header text */
+.drawer__content .cart-header p {
+  color: var(--color-text-light, #e0e0e0);
+  font-weight: 500;
+}
+
+/* Product name link */
+.drawer__content .hl-product-detail-product-name {
+  color: var(--color-accent-light, #a0e0ff);
+  text-decoration: none;
+}
+.drawer__content .hl-product-detail-product-name:hover {
+  color: var(--color-accent, #c0f0ff);
+}
+
+/* Price */
+.drawer__content .hl-product-detail-product-price {
+  color: var(--color-primary-light, #b0e0ff);
+}
+
+/* Quantity input */
+.drawer__content .hl-quantity-input {
+  background: var(--color-bg-darker, #011);
+  color: var(--color-text-light, #e0e0e0);
+  border: 1px solid var(--color-primary-dark, #0066cc);
+}
+
+/* Action icons (increase / decrease) */
+.drawer__content .action-icon {
+  filter: brightness(0.8);
+}
+
+/* Delete icon */
+.drawer__content .delete-icon {
+  filter: brightness(0.6);
+}
+
+/* Primary button */
+.drawer__content .view-cart-btn {
+  background-color: var(--color-primary-dark, #0066cc);
+  color: var(--color-text-light, #ffffff);
+  border: none;
+}
+.drawer__content .view-cart-btn:hover {
+  background-color: var(--color-primary, #0099ff);
+}
+
+/* Continue‑shopping text */
+.drawer__content .continue-shopping-text {
+  color: var(--color-text-light, #e0e0e0);
+}
+
+/* Miscellaneous text elements */
+.drawer__content p,
+.drawer__content span,
+.drawer__content div {
+  color: var(--color-text-light, #e0e0e0);
+}
+
+/* Ensure any inline SVGs inherit a darker colour */
+.drawer__content svg path {
+  fill: var(--color-text-light, #e0e0e0) !important;
+}
+
+/* Override any hard‑coded light colours that might appear */
+.drawer__content [style*="color:#"] {
+  color: var(--color-text-light, #e0e0e0) !important;
 }
 
 
