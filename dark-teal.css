@@ -101,6 +101,8 @@
     --product-input-svg-filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(130deg) brightness(100%) contrast(100%);
 }
 
+
+
 /* ------------------------------------------------
    Dark‑theme overrides for the "Product List" page
    ------------------------------------------------ */
@@ -129,6 +131,8 @@
 .hl-product-list-item-details  .image-wrapper {
     border-radius: var(--product-image-border-radius) !important;
 }
+
+
 
 /* ---------------------------------------------------
    Dark‑theme overrides for the "Product Details" page
@@ -159,87 +163,90 @@
     border-radius: var(--product-image-border-radius) !important;
 }
 
+
+
 /* --------------------------------------------------
    Dark‑theme overrides for the Side Drawer component
    -------------------------------------------------- */
 
 /* Base drawer styling – use the existing root variables */
 .drawer__content {
-  /* Existing inline styles are kept, but we reinforce a darker palette */
-  max-width: 370px;
-  background-color: var(--color-bg-dark, #022) !important;
-  border: 1px solid var(--color-primary-dark, #0066cc) !important;
-  color: var(--color-text-light, #f0f0f0);
+  max-width: 370px !important;
+  background-color: var(--color-bg-dark) !important;
+  border: 1px solid var(--color-primary-dark) !important;
+  color: var(--color-text-light) !important;
 }
 
 /* Header text */
 .drawer__content .cart-header p {
-  color: var(--color-text-light, #e0e0e0);
-  font-weight: 500;
+  color: var(--color-text-light) !important;
+  font-weight: 500 !important;
 }
 
 /* Product name link */
 .drawer__content .hl-product-detail-product-name {
-  color: var(--color-accent-light, #a0e0ff);
-  text-decoration: none;
+  color: var(--color-accent-light) !important;
+  text-decoration: none !important;
 }
 .drawer__content .hl-product-detail-product-name:hover {
-  color: var(--color-accent, #c0f0ff);
+  color: var(--color-accent) !important;
 }
 
 /* Price */
 .drawer__content .hl-product-detail-product-price {
-  color: var(--color-primary-light, #b0e0ff);
+  color: var(--color-primary-light) !important;
 }
 
 /* Quantity input */
 .drawer__content .hl-quantity-input {
-  background: var(--color-bg-darker, #011);
-  color: var(--color-text-light, #e0e0e0);
-  border: 1px solid var(--color-primary-dark, #0066cc);
+  background: var(--color-bg-darker) !important;
+  color: var(--color-text-light) !important;
+  border: 1px solid var(--color-primary-dark) !important;
 }
 
 /* Action icons (increase / decrease) */
 .drawer__content .action-icon {
-  filter: brightness(0.8);
+  filter: brightness(0.8) !important;
 }
 
 /* Delete icon */
 .drawer__content .delete-icon {
-  filter: brightness(0.6);
+  filter: brightness(0.6) !important;
 }
 
 /* Primary button */
 .drawer__content .view-cart-btn {
-  background-color: var(--color-primary-dark, #0066cc);
-  color: var(--color-text-light, #ffffff);
-  border: none;
+  background-color: var(--color-primary-dark) !important;
+  color: var(--color-text-light) !important;
+  border: none !important;
 }
 .drawer__content .view-cart-btn:hover {
-  background-color: var(--color-primary, #0099ff);
+  background-color: var(--color-primary) !important;
 }
 
 /* Continue‑shopping text */
 .drawer__content .continue-shopping-text {
-  color: var(--color-text-light, #e0e0e0);
+  color: var(--color-text-light) !important;
 }
 
 /* Miscellaneous text elements */
 .drawer__content p,
 .drawer__content span,
 .drawer__content div {
-  color: var(--color-text-light, #e0e0e0);
+  color: var(--color-text-light) !important;
 }
 
-/* Ensure any inline SVGs inherit a darker colour */
+/* Ensure any inline SVGs inherit the light text colour */
 .drawer__content svg path {
-  fill: var(--color-text-light, #e0e0e0) !important;
+  fill: var(--color-text-light) !important;
 }
 
-/* Override any hard‑coded light colours that might appear */
+/* Override any hard‑coded light colours that might appear inline */
 .drawer__content [style*="color:#"] {
-  color: var(--color-text-light, #e0e0e0) !important;
+  color: var(--color-text-light) !important;
 }
+
+
 
 /* -------------------------------------------------
    Dark‑theme overrides for the “Shopping Cart” page
@@ -290,6 +297,8 @@
     border-radius: var(--product-image-border-radius) !important;
     object-fit: fill !important;
 }
+
+
 
 /* -------------------------------------------------
    Dark‑theme overrides for the “Checkout” page
@@ -396,6 +405,8 @@
     color: var(--product-price-total-text-color) !important;
 }
 
+
+
 /* -------------------------------------------------
    Dark‑theme overrides for the “Thank You” page
    ------------------------------------------------- */
@@ -406,56 +417,48 @@
    suffix changes.
    ----------------------------------------------------------------- */
 [class*="cstore-thank-you"] {
-  background-color: var(--color-bg-dark, #022) !important;
-  color: var(--color-text-light, #f0f0f0) !important;
+  background-color: var(--color-bg-dark) !important;
+  color: var(--color-text-light) !important;
 }
 
-/* -----------------------------------------------------------------
-   Header & sub‑headline
-   ----------------------------------------------------------------- */
+/* Header & sub‑headline */
 [class*="cstore-thank-you"] .hl-thankyou-headline-container {
-  border-bottom: 1px solid var(--color-primary-dark, #0066cc);
+  border-bottom: 1px solid var(--color-primary-dark) !important;
 }
 [class*="cstore-thank-you"] .hl-thankyou-headline,
 [class*="cstore-thank-you"] .sub-headline {
-  color: var(--color-text-light, #e0e0e0);
+  color: var(--color-text-light) !important;
 }
 
-/* -----------------------------------------------------------------
-   Shipping details heading – treat it as a subtitle
-   ----------------------------------------------------------------- */
+/* Shipping details heading – treat it as a subtitle */
 [class*="cstore-thank-you"] .shipping-details-heading {
-  font-size: 1.125rem;          /* slightly larger than body text */
-  font-weight: 600;             /* semi‑bold */
-  margin-bottom: 0.5rem;
-  color: var(--color-primary-light, #a0c0ff);
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+  color: var(--color-primary-light) !important;
 }
 
 /* Shipping / billing details text */
 [class*="cstore-thank-you"] .shipping-details {
-  color: var(--color-text-light, #e0e0e0);
+  color: var(--color-text-light) !important;
 }
 
-/* -----------------------------------------------------------------
-   Order summary headings
-   ----------------------------------------------------------------- */
+/* Order summary headings */
 [class*="cstore-thank-you"] .hl-order-summary-container .header-desktop span,
 [class*="cstore-thank-you"] .hl-order-summary-container .header-mobile span {
-  color: var(--color-primary-light, #a0c0ff);
+  color: var(--color-primary-light) !important;
 }
 
-/* -----------------------------------------------------------------
-   Order items
-   ----------------------------------------------------------------- */
+/* Order items */
 [class*="cstore-thank-you"] .hl-order-item {
-  background-color: var(--color-bg-darker, #011);
-  border-bottom: 1px solid var(--color-primary-dark, #0066cc);
+  background-color: var(--color-bg-darker) !important;
+  border-bottom: 1px solid var(--color-primary-dark) !important;
 }
 
 /* Product name & variant */
 [class*="cstore-thank-you"] .hl-product-name,
 [class*="cstore-thank-you"] .cart-item-variant {
-  color: var(--color-accent-light, #c0e0ff);
+  color: var(--color-accent-light) !important;
 }
 
 /* Prices */
@@ -464,58 +467,54 @@
 [class*="cstore-thank-you"] .price-details-mobile span,
 [class*="cstore-thank-you"] .hl-product-price,
 [class*="cstore-thank-you"] .total-amount {
-  color: var(--color-primary-light, #b0e0ff);
+  color: var(--color-primary-light) !important;
 }
 
 /* Sub‑total / total labels */
 [class*="cstore-thank-you"] .cart-subtotal p,
 [class*="cstore-thank-you"] .cart-total p {
-  color: var(--color-text-light, #e0e0e0);
+  color: var(--color-text-light) !important;
 }
 
-/* -----------------------------------------------------------------
-   Action button – style it as a proper button
-   ----------------------------------------------------------------- */
+/* Action button – style it as a proper button */
 [class*="cstore-thank-you"] .thankyou-action-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-primary-dark, #0066cc);
-  color: var(--color-text-light, #ffffff);
-  border: none;
-  border-radius: 0.375rem;
-  padding: 0.75rem 1.25rem;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--color-primary-dark) !important;
+  color: var(--color-text-light) !important;
+  border: none !important;
+  border-radius: 0.375rem !important;
+  padding: 0.75rem 1.25rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease !important;
 }
 [class*="cstore-thank-you"] .thankyou-action-btn:hover {
-  background-color: var(--color-primary, #0099ff);
+  background-color: var(--color-primary) !important;
 }
 
 /* Arrow icon inside the button – darken slightly */
 [class*="cstore-thank-you"] .thankyou-action-btn .right-arrow {
-  margin-left: 0.5rem;
-  filter: brightness(0.8);
+  margin-left: 0.5rem !important;
+  filter: brightness(0.8) !important;
 }
 
-/* -----------------------------------------------------------------
-   Icons (check, arrow, etc.) – darken them slightly
-   ----------------------------------------------------------------- */
+/* Icons (check, arrow, etc.) – darken them slightly */
 [class*="cstore-thank-you"] .check-icon,
 [class*="cstore-thank-you"] .right-arrow {
-  filter: brightness(0.8);
+  filter: brightness(0.8) !important;
 }
 
 /* Ensure any inline SVG paths inherit the light text colour */
 [class*="cstore-thank-you"] svg path {
-  fill: var(--color-text-light, #e0e0e0) !important;
+  fill: var(--color-text-light) !important;
 }
 
 /* Override any hard‑coded light colours that may appear inline */
 [class*="cstore-thank-you"] [style*="color:#"] {
-  color: var(--color-text-light, #e0e0e0) !important;
+  color: var(--color-text-light) !important;
 }
 
 
@@ -544,6 +543,8 @@
 .hl-store-checkout-container button[type="submit"]:hover {
     filter: brightness(1.2) !important;
 }
+
+
 
 /* ---------------------------------------------------------
    Dark‑theme overrides for the Account / Login Page Styling
