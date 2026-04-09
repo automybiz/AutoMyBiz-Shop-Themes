@@ -152,47 +152,47 @@
 
 
 /* Shopping Cart Page */
-.c-store-cart  .hl-cart-heading {
+.hl-cart-container  .hl-cart-heading {
     font: var(--page-title-text-font-size) var(--page-title-text-font-family) !important;
     color: var(--page-title-text-color) !important;
 }
 
-.c-store-cart .hl-quantity-input-container .hl-quantity-input {
+.hl-cart-container .hl-quantity-input-container .hl-quantity-input {
     font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
     color: var(--product-input-text-color) !important;
     background: var(--product-input-background-color) !important;
 }
 
-.c-store-cart .hl-quantity-input-container .action-icon {
+.hl-cart-container .hl-quantity-input-container .action-icon {
     filter: var(--product-input-svg-filter) !important;
 }
 
-.c-store-cart  .hl-cart-product-name {
+.hl-cart-container  .hl-cart-product-name {
     font: var(--product-name-text-font-size) var(--product-name-text-font-family) !important;
     color: var(--product-name-text-color) !important;
 }
 
-.c-store-cart  .item-amount-wrapper * {
+.hl-cart-container  .item-amount-wrapper * {
     font: var(--product-price-amount-text-font-size) var(--product-price-amount-text-font-family) !important;
     color: var(--product-price-amount-text-color) !important;
 }
 
-.c-store-cart  .hl-quantity-input {
+.hl-cart-container  .hl-quantity-input {
     font: var(--product-input-text-font-size) var(--product-input-text-font-family) !important;
     color: var(--product-input-text-color) !important;
 }
 
-.c-store-cart  .cart-subtotal * {
+.hl-cart-container  .cart-subtotal * {
     font: var(--product-price-subtotal-text-font-size) var(--product-price-subtotal-text-font-family) !important;
     color: var(--product-price-subtotal-text-color) !important;
 }
 
-.c-store-cart  .cart-total * {
+.hl-cart-container  .cart-total * {
     font: var(--product-price-total-text-font-size) var(--product-price-total-text-font-family) !important;
     color: var(--product-price-total-text-color) !important;
 }
 
-.c-store-cart  .hl-cart-product-image * {
+.hl-cart-container  .hl-cart-product-image * {
     border-radius: var(--product-image-border-radius) !important;
     object-fit: fill !important;
 }
